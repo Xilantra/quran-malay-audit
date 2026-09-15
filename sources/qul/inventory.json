@@ -1,0 +1,53 @@
+{
+  "report_version": 1,
+  "generated_at": "2026-09-15",
+  "scope": "Official QUL catalogue verification plus key-set validation of the tracked JSON export. No full QUL translation dump is included.",
+  "official_pages": [
+    "https://qul.tarteel.ai/docs/malay",
+    "https://qul.tarteel.ai/docs/malayalam",
+    "https://qul.tarteel.ai/resources/translation"
+  ],
+  "resources": [
+    {
+      "source_key": "qul-ms-292",
+      "resource_id": "292",
+      "translator": "Abdullah Basamia",
+      "verified": true,
+      "verified_claim": "The official detail page is tagged Translation and Malay.",
+      "detail_page_status": "page verified",
+      "advertised_formats": [
+        "simple.json",
+        "simple.sqlite"
+      ],
+      "download_status": "json_export_downloaded",
+      "authentication_status": "browser_download_succeeded",
+      "text_audit_status": "key_set_validated_candidate_review_pending",
+      "remaining_review": "Review the 180 QUL-specific candidate records in the derived patch, then promote only independently confirmed records.",
+      "export_format": "simple.json",
+      "export_record_count": 6236,
+      "export_sha256": "e01351d5826a6d97eac05fd76abb9eecc66a331cf86c2c9fadfc667e06e38e9d",
+      "candidate_patch_count": 180
+    },
+    {
+      "source_key": "qul-130-metadata-anomaly",
+      "resource_id": "130",
+      "translator": "Malay Translation(Abdul Hameed and Kunhi)",
+      "verified": true,
+      "verified_claim": "The official title says Malay, but the page tag is Malayalam and the preview is Malayalam script.",
+      "download_status": "excluded",
+      "authentication_status": "not_applicable",
+      "text_audit_status": "not_started",
+      "remaining_review": "Resolve the QUL metadata anomaly before treating resource 130 as Malay."
+    }
+  ],
+  "summary": {
+    "official_malay_translation_resources_verified": 1,
+    "text_exports_audited": 0,
+    "blocked_or_pending_text_exports": 0,
+    "metadata_anomalies_excluded": 1,
+    "cross_source_corrections_created": 0,
+    "text_exports_validated": 1,
+    "candidate_patches_created": 1
+  },
+  "source_directory": "sources/qul/resources"
+}

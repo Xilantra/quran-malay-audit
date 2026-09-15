@@ -1,0 +1,13 @@
+{
+  "source_key": "qul",
+  "provider": "Quranic Universal Library (QUL/Tarteel)",
+  "resource_id": "catalog",
+  "translator": "multiple source-specific resources",
+  "official_url": "https://qul.tarteel.ai/resources",
+  "retrieval_date": "2026-09-15",
+  "version": null,
+  "license_status": "resource_specific_license_review_required",
+  "download_status": "mixed_per_resource",
+  "notes": "Resource identity and findings remain separate under sources/qul/resources/."
+}
+

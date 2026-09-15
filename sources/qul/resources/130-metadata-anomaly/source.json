@@ -1,0 +1,16 @@
+{
+  "source_key": "qul-130-metadata-anomaly",
+  "provider": "Quranic Universal Library (QUL/Tarteel)",
+  "resource_id": "130",
+  "translator": "Malay Translation(Abdul Hameed and Kunhi)",
+  "official_url": "https://qul.tarteel.ai/resources/translation/130",
+  "retrieval_date": "2026-09-15",
+  "version": null,
+  "license_status": "resource_specific_license_review_required",
+  "download_status": "excluded",
+  "audit_status": "metadata_anomaly_excluded_from_malay_track",
+  "observed_language_tag": "Malayalam",
+  "observed_preview_script": "Malayalam",
+  "notes": "The title contains Malay, but the official page is tagged Malayalam and its preview renders Malayalam script. Keep this resource outside the Malay track until the metadata is resolved."
+}
+

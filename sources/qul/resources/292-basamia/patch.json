@@ -1,0 +1,1288 @@
+{
+  "version": 1,
+  "patch_status": "candidate",
+  "source": "QUL resource 292, Abdullah Basamia",
+  "scope": "candidate textual patch from exact phrase matches in the validated QUL simple.json export",
+  "source_key": "qul-ms-292",
+  "resource_id": "292",
+  "translator": "Abdullah Basamia",
+  "base_export": {
+    "format": "simple.json",
+    "record_count": 6236,
+    "sha256": "e01351d5826a6d97eac05fd76abb9eecc66a331cf86c2c9fadfc667e06e38e9d"
+  },
+  "derived_from": {
+    "source_key": "qurancom-ms-39",
+    "manifest": "sources/quran.com/corrections.json",
+    "exact_phrase_match_count": 180
+  },
+  "distribution_policy": "derived patch only; never distribute the original export or database files",
+  "provenance": {
+    "retrieved_at": "2026-09-15",
+    "source_record": "sources/qul/resources/292-basamia/source.json",
+    "review_note": "Each record requires QUL-specific review before status can become confirmed."
+  },
+  "corrections": [
+    {
+      "verse_key": "24:53",
+      "find": "sebebar-benar",
+      "replace": "sebenar-benar",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "35:42",
+      "find": "sebebar-benar",
+      "replace": "sebenar-benar",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "56:4",
+      "find": "sebebar-benar",
+      "replace": "sebenar-benar",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "7:123",
+      "find": "akibatya",
+      "replace": "akibatnya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "18:105",
+      "find": "akibatya",
+      "replace": "akibatnya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "16:20",
+      "find": "bahkah",
+      "replace": "bahkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "3:64",
+      "find": "barpaling",
+      "replace": "berpaling",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "3:145",
+      "find": "behagiannya",
+      "replace": "bahagiannya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "3:105",
+      "find": "berceri-berai",
+      "replace": "bercerai-berai",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "16:6",
+      "find": "berihat",
+      "replace": "berehat",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "26:39",
+      "find": "Berkumpulah",
+      "replace": "Berkumpullah",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "48:27",
+      "find": "berlakunnya",
+      "replace": "berlakunya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "48:27",
+      "find": "feadah",
+      "replace": "faedah",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "48:27",
+      "find": "mengangguhkan",
+      "replace": "menangguhkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "16:105",
+      "find": "bertabikat",
+      "replace": "bertabiat",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "22:15",
+      "find": "bumbong",
+      "replace": "bumbung",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "3:37",
+      "find": "buah-buahanan",
+      "replace": "buah-buahan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "4:156",
+      "find": "dangan",
+      "replace": "dengan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "6:12",
+      "find": "dangan",
+      "replace": "dengan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "6:18",
+      "find": "dangan",
+      "replace": "dengan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "6:42",
+      "find": "dangan",
+      "replace": "dengan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "19:70",
+      "find": "dangan",
+      "replace": "dengan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "18:96",
+      "find": "ddia",
+      "replace": "dia",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "15:36",
+      "find": "dibangitkan",
+      "replace": "dibangkitkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "27:87",
+      "find": "dikekhendaki",
+      "replace": "dikehendaki",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "10:107",
+      "find": "dikendakiNya",
+      "replace": "dikehendakiNya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "2:196",
+      "find": "dikepong",
+      "replace": "dikepung",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "12:66",
+      "find": "dikepong",
+      "replace": "dikepung",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "27:13",
+      "find": "Firan",
+      "replace": "Firaun",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "2:73",
+      "find": "Pukulah",
+      "replace": "Pukullah",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "38:44",
+      "find": "pukulah",
+      "replace": "pukullah",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "21:37",
+      "find": "halya",
+      "replace": "halnya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "4:77",
+      "find": "Harba",
+      "replace": "Harta",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "34:7",
+      "find": "sehancur-hanurnya",
+      "replace": "sehancur-hancurnya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "4:102",
+      "find": "hendakah",
+      "replace": "hendaklah",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "38:36",
+      "find": "hendaK",
+      "replace": "hendak",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "38:88",
+      "find": "kabenaran",
+      "replace": "kebenaran",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "36:21",
+      "find": "kapada",
+      "replace": "kepada",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "26:67",
+      "find": "kebanyakkan",
+      "replace": "kebanyakan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "87:16",
+      "find": "kebanyakkan",
+      "replace": "kebanyakan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "26:166",
+      "find": "kebanyaKan",
+      "replace": "kebanyakan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "93:4",
+      "find": "keaadaanmu",
+      "replace": "keadaanmu",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "10:7",
+      "find": "kekuasasaan",
+      "replace": "kekuasaan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "63:4",
+      "find": "kelalukannya",
+      "replace": "kelakuannya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "38:20",
+      "find": "kepitahan",
+      "replace": "kepetahan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "34:19",
+      "find": "kamakmuran",
+      "replace": "kemakmuran",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "9:5",
+      "find": "keponglah",
+      "replace": "kepunglah",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "39:28",
+      "find": "laitu",
+      "replace": "iaitu",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "83:28",
+      "find": "laitu",
+      "replace": "iaitu",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "106:2",
+      "find": "laitu",
+      "replace": "iaitu",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "107:5",
+      "find": "laitu",
+      "replace": "iaitu",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "38:75",
+      "find": "lblis",
+      "replace": "Iblis",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "3:84",
+      "find": "lsmail",
+      "replace": "Ismail",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "38:48",
+      "find": "lsmail",
+      "replace": "Ismail",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "70:41",
+      "find": "makhluk-makluk",
+      "replace": "makhluk-makhluk",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "36:21",
+      "find": "mandapat",
+      "replace": "mendapat",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "87:15",
+      "find": "mangerjakan",
+      "replace": "mengerjakan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "36:67",
+      "find": "mangubahkan",
+      "replace": "mengubahkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "20:77",
+      "find": "memgembara",
+      "replace": "mengembara",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "20:77",
+      "find": "pukulah",
+      "replace": "pukullah",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "47:4",
+      "find": "memimbulkannya",
+      "replace": "menimbulkannya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "2:284",
+      "find": "memyembunyikannya",
+      "replace": "menyembunyikannya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "2:272",
+      "find": "menjadiKan",
+      "replace": "menjadikan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "3:140",
+      "find": "mendaapat",
+      "replace": "mendapat",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "26:103",
+      "find": "membukitkan",
+      "replace": "membuktikan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "20:56",
+      "find": "membukti",
+      "replace": "membuktikan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "41:26",
+      "find": "nyayian-nyanyian",
+      "replace": "nyanyian-nyanyian",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "7:51",
+      "find": "persiapan-persipan",
+      "replace": "persiapan-persiapan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "88:7",
+      "find": "menggemokkan",
+      "replace": "menggemukkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "48:15",
+      "find": "mengepong",
+      "replace": "mengepung",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "18:19",
+      "find": "menengetahui",
+      "replace": "mengetahui",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "45:10",
+      "find": "menyelematkan",
+      "replace": "menyelamatkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "7:177",
+      "find": "merela",
+      "replace": "mereka",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "7:37",
+      "find": "mereKa",
+      "replace": "mereka",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "24:39",
+      "find": "meyempurnakan",
+      "replace": "menyempurnakan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "79:28",
+      "find": "menyempurnaKannya",
+      "replace": "menyempurnakannya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "11:63",
+      "find": "mukjzat",
+      "replace": "mukjizat",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "6:137",
+      "find": "nengenai",
+      "replace": "mengenai",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "31:20",
+      "find": "nikmat-nimatNya",
+      "replace": "nikmat-nikmatNya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "16:36",
+      "find": "oIeh",
+      "replace": "oleh",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "27:5",
+      "find": "palig",
+      "replace": "paling",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "12:13",
+      "find": "Permergian",
+      "replace": "Pemergian",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "37:58",
+      "find": "rakan-rakanya",
+      "replace": "rakan-rakannya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "31:7",
+      "find": "seoleh-oleh",
+      "replace": "seolah-olah",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "48:3",
+      "find": "sepunuh-penuh",
+      "replace": "sepenuh-penuh",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "5:81",
+      "find": "Sekirany",
+      "replace": "Sekiranya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "6:16",
+      "find": "sesugguhnya",
+      "replace": "sesungguhnya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "16:95",
+      "find": "sesugguhnya",
+      "replace": "sesungguhnya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "104:8",
+      "find": "Sesungguhnnya",
+      "replace": "Sesungguhnya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "98:7",
+      "find": "Seungguhnya",
+      "replace": "Sesungguhnya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "2:222",
+      "find": "SesungguhNya",
+      "replace": "Sesungguhnya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "27:42",
+      "find": "singahsanamu",
+      "replace": "singgahsanamu",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "22:67",
+      "find": "syariaatmu",
+      "replace": "syariatmu",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "12:50",
+      "find": "tatkata",
+      "replace": "tatkala",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "56:18",
+      "find": "tekoh-tekoh",
+      "replace": "teko-teko",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "41:43",
+      "find": "terdahuhu",
+      "replace": "terdahulu",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "35:18",
+      "find": "tldak",
+      "replace": "tidak",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "10:94",
+      "find": "turukan",
+      "replace": "turunkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "41:50",
+      "find": "aKan",
+      "replace": "akan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "41:44",
+      "find": "AL-Quran",
+      "replace": "Al-Quran",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "41:37",
+      "find": "betulah",
+      "replace": "betullah",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "14:45",
+      "find": "bukti-buKti",
+      "replace": "bukti-bukti",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "39:29",
+      "find": "dimilik",
+      "replace": "dimiliki",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "51:36",
+      "find": "dipereksa",
+      "replace": "diperiksa",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "2:76",
+      "find": "mengalahkah",
+      "replace": "mengalahkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "48:29",
+      "find": "mengkagumkan",
+      "replace": "mengagumkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "7:184",
+      "find": "mengidap",
+      "replace": "menghidap",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "23:25",
+      "find": "mengidap",
+      "replace": "menghidap",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "12:25",
+      "find": "menyiksanya",
+      "replace": "menyeksanya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "28:6",
+      "find": "bertindas",
+      "replace": "tertindas",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "2:114",
+      "find": "sepatunya",
+      "replace": "sepatutnya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "9:92",
+      "find": "airmata",
+      "replace": "air mata",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "4:48",
+      "find": "apajua",
+      "replace": "apa jua",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "59:6",
+      "find": "apajua",
+      "replace": "apa jua",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "31:14",
+      "find": "ibubapamu",
+      "replace": "ibu bapamu",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "10:7",
+      "find": "berpuashati",
+      "replace": "berpuas hati",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "13:21",
+      "find": "soaljawab",
+      "replace": "soal jawab",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "2:214",
+      "find": "hartabenda",
+      "replace": "harta benda",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "18:42",
+      "find": "hartabendanya",
+      "replace": "harta bendanya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "41:7",
+      "find": "hartabendanya",
+      "replace": "harta bendanya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "92:18",
+      "find": "hartabendanya",
+      "replace": "harta bendanya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "41:28",
+      "find": "didalamnya",
+      "replace": "di dalamnya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "37:55",
+      "find": "ditengah",
+      "replace": "di tengah",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "63:4",
+      "find": "engkaujuga",
+      "replace": "engkau juga",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "56:81",
+      "find": "sambilewa",
+      "replace": "sambil lewa",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "3:144",
+      "find": "sudahpun",
+      "replace": "sudah pun",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "17:61",
+      "find": "di adun",
+      "replace": "diadun",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "35:10",
+      "find": "di angkatnya",
+      "replace": "diangkatnya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "28:84",
+      "find": "di balas",
+      "replace": "dibalas",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "92:19",
+      "find": "di balas",
+      "replace": "dibalas",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "64:7",
+      "find": "di bangkitkan",
+      "replace": "dibangkitkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "7:155",
+      "find": "di bawa",
+      "replace": "dibawa",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "16:80",
+      "find": "di bawa",
+      "replace": "dibawa",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "34:52",
+      "find": "di bawa",
+      "replace": "dibawa",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "18:55",
+      "find": "di datangi",
+      "replace": "didatangi",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "83:28",
+      "find": "di dampingkan",
+      "replace": "didampingkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "4:55",
+      "find": "di kurniakan",
+      "replace": "dikurniakan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "22:25",
+      "find": "di larang",
+      "replace": "dilarang",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "74:31",
+      "find": "di maksudkan",
+      "replace": "dimaksudkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "43:71",
+      "find": "di pandang",
+      "replace": "dipandang",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "49:7",
+      "find": "di perhiaskannya",
+      "replace": "diperhiaskannya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "57:20",
+      "find": "di sediakan",
+      "replace": "disediakan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "65:7",
+      "find": "di sempitkan",
+      "replace": "disempitkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "67:30",
+      "find": "di telan",
+      "replace": "ditelan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "7:74",
+      "find": "di tempatkannya",
+      "replace": "ditempatkannya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "52:17",
+      "find": "di tempatkan",
+      "replace": "ditempatkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "54:54",
+      "find": "di tempatkan",
+      "replace": "ditempatkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "7:131",
+      "find": "di tetapkan",
+      "replace": "ditetapkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "27:87",
+      "find": "di tiup",
+      "replace": "ditiup",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "4:176",
+      "find": "di tinggalkan",
+      "replace": "ditinggalkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "81:3",
+      "find": "di terbangkan",
+      "replace": "diterbangkan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "17:13",
+      "find": "di tatapnya",
+      "replace": "ditatapnya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "7:158",
+      "find": "di utus",
+      "replace": "diutus",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "3:99",
+      "find": "jalan jalan",
+      "replace": "jalan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "3:114",
+      "find": "segera segera",
+      "replace": "segera",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "5:13",
+      "find": "mereka mereka dengannya",
+      "replace": "mereka dengannya",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "5:51",
+      "find": "mereka itu mereka itu",
+      "replace": "mereka itu",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "5:59",
+      "find": "orang orang",
+      "replace": "orang-orang",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "5:112",
+      "find": "orang orang",
+      "replace": "orang-orang",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "17:99",
+      "find": "orang orang",
+      "replace": "orang-orang",
+      "occurrences": 2,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "47:14",
+      "find": "orang orang",
+      "replace": "orang-orang",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "6:6",
+      "find": "dosa mereka mereka",
+      "replace": "dosa mereka",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "6:150",
+      "find": "membenarkan mereka mereka",
+      "replace": "membenarkan mereka",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "6:153",
+      "find": "menurut menurut jalan-jalan",
+      "replace": "menurut jalan-jalan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "7:97",
+      "find": "negeri negeri",
+      "replace": "negeri-negeri",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "7:98",
+      "find": "negeri negeri",
+      "replace": "negeri-negeri",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "7:157",
+      "find": "pada pada",
+      "replace": "pada",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "7:182",
+      "find": "menarik menarik",
+      "replace": "menarik",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "8:31",
+      "find": "cerita cerita dongeng",
+      "replace": "cerita-cerita dongeng",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "21:2",
+      "find": "lepas satu: satu",
+      "replace": "lepas satu-satu",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "24:10",
+      "find": "(tentulah kamu akan) akan",
+      "replace": "(tentulah kamu akan)",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "24:64",
+      "find": "tiap tiap sesuatu",
+      "replace": "tiap-tiap sesuatu",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "27:88",
+      "find": "tiap - tiap sesuatu",
+      "replace": "tiap-tiap sesuatu",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "35:33",
+      "find": "Syurga - syurga",
+      "replace": "Syurga-syurga",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "41:25",
+      "find": "umat umat",
+      "replace": "umat-umat",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "46:4",
+      "find": "makhluk - makhluk",
+      "replace": "makhluk-makhluk",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "48:29",
+      "find": "belas kasihan kasihan",
+      "replace": "belas kasihan",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "51:28",
+      "find": "mereka mereka tidak",
+      "replace": "mereka tidak",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "59:4",
+      "find": "kerana mereka mereka menentang",
+      "replace": "kerana mereka menentang",
+      "occurrences": 1,
+      "status": "candidate"
+    },
+    {
+      "verse_key": "70:16",
+      "find": "anggota anggota tubuh",
+      "replace": "anggota-anggota tubuh",
+      "occurrences": 1,
+      "status": "candidate"
+    }
+  ]
+}
+

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/quran-ms-translation-audit/finding.schema.json",
+  "title": "Quran Malay translation audit finding",
+  "type": "object",
+  "required": [
+    "source_key",
+    "resource_id",
+    "status",
+    "verse_key",
+    "observed",
+    "proposed",
+    "evidence",
+    "reviewer",
+    "upstream_ticket"
+  ],
+  "properties": {
+    "source_key": { "type": "string", "minLength": 1 },
+    "resource_id": { "type": "string", "minLength": 1 },
+    "comparison_source_key": { "type": ["string", "null"] },
+    "status": {
+      "type": "string",
+      "enum": ["candidate", "confirmed", "rejected", "submitted", "fixed"]
+    },
+    "verse_key": { "type": "string", "pattern": "^[0-9]+:[0-9]+$" },
+    "observed": { "type": ["string", "null"] },
+    "proposed": { "type": ["string", "null"] },
+    "evidence": { "type": "string", "minLength": 1 },
+    "reviewer": { "type": ["string", "null"] },
+    "upstream_ticket": { "type": ["string", "null"] },
+    "is_error": { "type": "boolean" }
+  },
+  "additionalProperties": true
+}

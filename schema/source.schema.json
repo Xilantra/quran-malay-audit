@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/quran-ms-translation-audit/source.schema.json",
+  "title": "Quran Malay translation audit source",
+  "type": "object",
+  "required": [
+    "source_key",
+    "provider",
+    "resource_id",
+    "translator",
+    "official_url",
+    "retrieval_date",
+    "version",
+    "license_status",
+    "download_status"
+  ],
+  "properties": {
+    "source_key": { "type": "string", "minLength": 1 },
+    "provider": { "type": "string", "minLength": 1 },
+    "resource_id": { "type": "string", "minLength": 1 },
+    "translator": { "type": "string", "minLength": 1 },
+    "official_url": { "type": "string", "format": "uri" },
+    "retrieval_date": { "type": "string", "format": "date" },
+    "version": { "type": ["string", "null"] },
+    "license_status": { "type": "string", "minLength": 1 },
+    "download_status": { "type": "string", "minLength": 1 }
+  },
+  "additionalProperties": true
+}

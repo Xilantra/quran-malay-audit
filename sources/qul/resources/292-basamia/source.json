@@ -1,0 +1,19 @@
+{
+  "source_key": "qul-ms-292",
+  "provider": "Quranic Universal Library (QUL/Tarteel)",
+  "resource_id": "292",
+  "translator": "Abdullah Basamia",
+  "official_url": "https://qul.tarteel.ai/resources/translation/292",
+  "retrieval_date": "2026-09-15",
+  "version": "simple.json export timestamp 2025-05-27",
+  "license_status": "resource_specific_license_review_required",
+  "download_status": "json_export_downloaded",
+  "audit_status": "key_set_validated_candidate_patch_pending_review",
+  "notes": "The QUL detail page provided a complete JSON export. The original export remains outside this repository. Review the candidate patch against this source before promoting any record to confirmed.",
+  "export_format": "simple.json",
+  "export_record_count": 6236,
+  "export_sha256": "e01351d5826a6d97eac05fd76abb9eecc66a331cf86c2c9fadfc667e06e38e9d",
+  "candidate_patch_count": 180,
+  "distribution_policy": "derived patch only; original export and database files are not included"
+}
+

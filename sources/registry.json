@@ -1,0 +1,57 @@
+{
+  "registry_version": 1,
+  "retrieval_date": "2026-09-15",
+  "notes": "Source identity is part of the data contract. Do not merge records from different providers or resource IDs into one correction track.",
+  "sources": [
+    {
+      "source_key": "qurancom-ms-39",
+      "provider": "Quran.com Content API v4",
+      "resource_id": "39",
+      "translator": "Abdullah Muhammad Basmeih",
+      "official_url": "https://api.quran.com/api/v4/quran/translations/39",
+      "retrieval_date": "2026-09-15",
+      "version": "reviewed correction catalog 2026-09-15",
+      "license_status": "terms_review_required_before_redistribution",
+      "download_status": "correction_catalog_only_full_translation_not_included",
+      "audit_status": "197_confirmed_corrections",
+      "notes": "Independent audit track for Quran.com resource 39. Keep this source separate from every QUL resource.",
+      "path": "sources/quran.com/source.json"
+    },
+    {
+      "source_key": "qul-ms-292",
+      "provider": "Quranic Universal Library (QUL/Tarteel)",
+      "resource_id": "292",
+      "translator": "Abdullah Basamia",
+      "official_url": "https://qul.tarteel.ai/resources/translation/292",
+      "retrieval_date": "2026-09-15",
+      "version": "simple.json export timestamp 2025-05-27",
+      "license_status": "resource_specific_license_review_required",
+      "download_status": "json_export_downloaded",
+      "audit_status": "key_set_validated_candidate_patch_pending_review",
+      "notes": "The QUL detail page provided a complete JSON export. The original export remains outside this repository. Review the candidate patch against this source before promoting any record to confirmed.",
+      "path": "sources/qul/resources/292-basamia/source.json",
+      "export_format": "simple.json",
+      "export_record_count": 6236,
+      "export_sha256": "e01351d5826a6d97eac05fd76abb9eecc66a331cf86c2c9fadfc667e06e38e9d",
+      "candidate_patch_count": 180,
+      "distribution_policy": "derived patch only; original export and database files are not included"
+    },
+    {
+      "source_key": "qul-130-metadata-anomaly",
+      "provider": "Quranic Universal Library (QUL/Tarteel)",
+      "resource_id": "130",
+      "translator": "Malay Translation(Abdul Hameed and Kunhi)",
+      "official_url": "https://qul.tarteel.ai/resources/translation/130",
+      "retrieval_date": "2026-09-15",
+      "version": null,
+      "license_status": "resource_specific_license_review_required",
+      "download_status": "excluded",
+      "audit_status": "metadata_anomaly_excluded_from_malay_track",
+      "observed_language_tag": "Malayalam",
+      "observed_preview_script": "Malayalam",
+      "notes": "The title contains Malay, but the official page is tagged Malayalam and its preview renders Malayalam script. Keep this resource outside the Malay track until the metadata is resolved.",
+      "path": "sources/qul/resources/130-metadata-anomaly/source.json"
+    }
+  ]
+}
+
