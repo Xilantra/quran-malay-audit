@@ -1,0 +1,67 @@
+name: Translation finding
+description: Report a source-scoped wording, spelling, or metadata finding.
+title: "[finding] "
+labels:
+  - finding
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please validate the named source export before opening a finding. Do not attach the original translation export or any SQL database.
+  - type: input
+    id: source_key
+    attributes:
+      label: Source key
+      description: For example, qurancom-ms-39 or qul-ms-292.
+      placeholder: qul-ms-292
+    validations:
+      required: true
+  - type: input
+    id: resource_id
+    attributes:
+      label: Resource ID
+      placeholder: "292"
+    validations:
+      required: true
+  - type: input
+    id: verse_key
+    attributes:
+      label: Verse key
+      placeholder: "2:255"
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed text
+      description: Include only the smallest relevant phrase.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed text
+      description: State the proposed replacement or explain why this is a metadata issue.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and provenance
+      description: Include the official URL, export format, retrieval date, version, and SHA-256 when available.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Review checks
+      options:
+        - label: I used the exact source key and resource ID.
+          required: true
+        - label: I did not attach an original translation export, SQL file, credential, or personal data.
+          required: true
+        - label: I understand this is a candidate until independently reviewed.
+          required: true
+

@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: QUL upstream data contribution
+    url: https://qul.tarteel.ai/docs/contribute-data
+    about: Use QUL's contribution workflow for provider-side corrections.
+  - name: QUL upstream issue tracker
+    url: https://github.com/TarteelAI/quranic-universal-library/issues
+    about: Report provider-side metadata or source issues to QUL.
+

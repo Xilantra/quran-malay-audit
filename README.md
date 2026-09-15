@@ -1,5 +1,8 @@
 # Quran Malay Translation Audit
 
+[![CI](https://github.com/Xilantra/quran-malay-audit/actions/workflows/ci.yml/badge.svg)](https://github.com/Xilantra/quran-malay-audit/actions/workflows/ci.yml)
+[![Latest release](https://img.shields.io/github/v/release/Xilantra/quran-malay-audit?display_name=tag)](https://github.com/Xilantra/quran-malay-audit/releases)
+
 This is an independent, deterministic audit toolkit for Quran Malay translation data. It keeps each provider and resource ID in its own source track, validates local JSON or SQLite exports against the canonical 6,236 verse keys, and records reviewable differences without treating one translation as proof that another is wrong.
 
 ## Source-first layout
@@ -92,3 +95,7 @@ python3 -m unittest discover -s tests -v
 python3 -m quran_ms_audit --help
 git diff --check
 ```
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for source-scoped review rules and local checks. Use the [translation finding template](https://github.com/Xilantra/quran-malay-audit/issues/new?template=translation-finding.yml) for a new candidate, and read [SECURITY.md](SECURITY.md) before reporting a sensitive issue.
