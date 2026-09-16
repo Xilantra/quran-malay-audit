@@ -86,6 +86,12 @@ The application is guarded and idempotent. It requires the expected `find` text 
 - [QUL contribute-data guide](https://qul.tarteel.ai/docs/contribute-data)
 - [QUL issue tracker](https://github.com/TarteelAI/quranic-universal-library/issues)
 
+## Further reading
+
+- Wafa Abdul Jabbar Shohibuddin, Basri Ibrahim, and Muhammad Lukman Mat Sin, “[Analisis Kepincangan Terjemahan al-Quran oleh Abdullah Basmeih: Satu Perbandingan dengan Tafsir al-Muyassar](https://gaexcellence.com/ijmoe/article/view/5864),” *International Journal of Modern Education*, 7(26), 2025. [DOI](https://doi.org/10.35631/IJMOE.726041)
+
+This secondary study compares selected verses with Tafsir al-Muyassar. It is useful background for human review, but it is not an upstream correction manifest, provider approval, or automatic proof that a translation is wrong.
+
 Review provider terms and attribution requirements before redistributing any translation text. Keep user-provided exports in the ignored `exports/` directory and record their retrieval date, version, and SHA-256 in a local report.
 
 ## Tests
