@@ -89,8 +89,12 @@ The application is guarded and idempotent. It requires the expected `find` text 
 ## Further reading
 
 - Wafa Abdul Jabbar Shohibuddin, Basri Ibrahim, and Muhammad Lukman Mat Sin, “[Analisis Kepincangan Terjemahan al-Quran oleh Abdullah Basmeih: Satu Perbandingan dengan Tafsir al-Muyassar](https://gaexcellence.com/ijmoe/article/view/5864),” *International Journal of Modern Education*, 7(26), 2025. [DOI](https://doi.org/10.35631/IJMOE.726041)
+- Azman Ariffin and Idris Mansor, “[Constraints in translating the style of Qur’an into Malay](https://www.jlls.org/index.php/jlls/article/view/4171),” *Journal of Language and Linguistic Studies*, 18(1), 2022. Focus: metaphors, omissions, and other linguistic challenges in Basmeih’s translation.
+- Mohammad Roshimi Abdullah, Muhammad Lukman Mat Sin, Muhammad Arif Musa, Muaz Mohd Ghani Basri, Wafa Abdul Jabbar Shohibuddin, and Abdul Basir Awang @ Mohd Ramli, “[Wāw Al-Ḥāl Between Arabic Grammatical Theory and Translation Practice](https://al-qanatir.com/aq/article/view/1313),” *Al-Qanatir: International Journal of Islamic Studies*, 2025. [DOI](https://doi.org/10.64757/alqanatir.2025.345/1313). Focus: one Arabic grammatical construction across three Malay translations.
+- Kasyfullah Abd Kadir and Idris Mansor, “[Manifestasi Ideologi dalam Terjemahan Item Taksa Al-Quran oleh Abdullah Basmeih](https://brill.com/abstract/journals/jqhs/20/2/article-p238_4.xml),” *Al-Bayan: Journal of Qur’an and Hadith Studies*, 20(2), 2022. [DOI](https://doi.org/10.1163/22321969-12340115). Focus: ambiguous words and interpretive choices in Basmeih’s translation.
+- Muaz Mohd Ghani Basri, Luqmanul Hakim Muhamad Jamil, Muhammad Lukman Mat Sin, Roshimi Abdullah, and Wafa Abdul Jabbar Shohibuddin, “[Tafsir Pimpinan al-Rahman: Analisis Metodologi Sheikh Abdullah Basmeih terhadap Terjemahan Ayat-ayat Sifat Allah SWT](https://bitarajournal.com/bitarajournal/article/view/661).” Focus: theological translation methodology, including *ithbat* and *takwil*.
 
-This secondary study compares selected verses with Tafsir al-Muyassar. It is useful background for human review, but it is not an upstream correction manifest, provider approval, or automatic proof that a translation is wrong.
+These secondary studies are useful background for human review, but they are not upstream correction manifests, provider approvals, or automatic proof that a translation is wrong. Any verse-level claim extracted from them must remain source-scoped and `candidate` until independently reviewed.
 
 Review provider terms and attribution requirements before redistributing any translation text. Keep user-provided exports in the ignored `exports/` directory and record their retrieval date, version, and SHA-256 in a local report.
 
