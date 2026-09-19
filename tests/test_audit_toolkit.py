@@ -18,6 +18,7 @@ from quran_ms_audit.corrections import (
     filter_corrections,
     load_correction_manifest,
 )
+from quran_ms_audit.__main__ import _parser
 from quran_ms_audit.jev import JevClient, JevClientError, load_api_key, review_findings
 
 
@@ -88,6 +89,23 @@ class RecordingReviewClient:
 
 
 class AuditToolkitTests(unittest.TestCase):
+    def test_jev_cli_parser_accepts_review_options(self):
+        args = _parser().parse_args(
+            [
+                "jev-review",
+                "sources/qul/findings.json",
+                "--source-key",
+                "qul-ms-292",
+                "--limit",
+                "1",
+            ]
+        )
+
+        self.assertEqual(args.command, "jev-review")
+        self.assertEqual(args.source_key, "qul-ms-292")
+        self.assertEqual(args.limit, 1)
+        self.assertEqual(args.env_file, Path(".env"))
+
     def test_jev_client_sends_scoped_state_and_returns_answers(self):
         finding = {
             "source_key": "qul-ms-292",
