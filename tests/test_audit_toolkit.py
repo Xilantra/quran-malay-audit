@@ -18,6 +18,7 @@ from quran_ms_audit.corrections import (
     filter_corrections,
     load_correction_manifest,
 )
+from quran_ms_audit.jev import JevClient, JevClientError, load_api_key, review_findings
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -27,7 +28,169 @@ CORRECTIONS_PATH = REPO_ROOT / "sources/quran.com/corrections.json"
 QUL_PATCH_PATH = REPO_ROOT / "sources/qul/resources/292-basamia/patch.json"
 
 
+class FakeJevResponse:
+    def __init__(self, payload):
+        self.payload = json.dumps(payload).encode("utf-8")
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        return False
+
+    def read(self):
+        return self.payload
+
+
+class RecordingJevOpener:
+    def __init__(self, payload=None, error=None):
+        self.payload = payload or {
+            "model": "jev-1.13.0",
+            "answers": {
+                "finding_kind": {
+                    "type": "choice",
+                    "choice": "spelling_or_typo",
+                    "confidence": 0.8,
+                    "probabilities": {"spelling_or_typo": 0.8},
+                },
+                "specialist_review": {"type": "noul", "noul": 0.9},
+            },
+            "usage": {"input_tokens": 10, "output_tokens": 5},
+        }
+        self.error = error
+        self.request = None
+        self.timeout = None
+
+    def __call__(self, request, timeout):
+        self.request = request
+        self.timeout = timeout
+        if self.error:
+            raise self.error
+        return FakeJevResponse(self.payload)
+
+
+class RecordingReviewClient:
+    model = "test-model"
+
+    def __init__(self, error_on=None):
+        self.calls = []
+        self.error_on = error_on
+
+    def review(self, finding):
+        self.calls.append(finding["verse_key"])
+        if finding["verse_key"] == self.error_on:
+            raise JevClientError("simulated request failure")
+        return {
+            "model": self.model,
+            "answers": {"finding_kind": {"choice": "spelling_or_typo"}},
+            "usage": {"input_tokens": 1, "output_tokens": 1},
+        }
+
+
 class AuditToolkitTests(unittest.TestCase):
+    def test_jev_client_sends_scoped_state_and_returns_answers(self):
+        finding = {
+            "source_key": "qul-ms-292",
+            "resource_id": "292",
+            "verse_key": "24:53",
+            "status": "candidate",
+            "observed": "sebebar-benar",
+            "proposed": "sebenar-benar",
+            "evidence": "review evidence",
+        }
+        opener = RecordingJevOpener()
+        client = JevClient("secret", opener=opener)
+
+        result = client.review(finding)
+
+        self.assertEqual(result["answers"]["finding_kind"]["choice"], "spelling_or_typo")
+        payload = json.loads(opener.request.data.decode("utf-8"))
+        self.assertEqual(
+            payload["state"],
+            json.dumps(
+                {
+                    "source_key": "qul-ms-292",
+                    "resource_id": "292",
+                    "verse_key": "24:53",
+                    "observed": "sebebar-benar",
+                    "proposed": "sebenar-benar",
+                    "evidence": "review evidence",
+                },
+                ensure_ascii=False,
+            ),
+        )
+        self.assertEqual(opener.request.get_header("Authorization"), "Bearer secret")
+
+    def test_jev_review_selects_candidates_and_preserves_advisory_identity(self):
+        findings = [
+            {
+                "source_key": "qul-ms-292",
+                "resource_id": "292",
+                "verse_key": "1:1",
+                "status": "candidate",
+            },
+            {
+                "source_key": "qul-ms-292",
+                "resource_id": "292",
+                "verse_key": "1:2",
+                "status": "confirmed",
+            },
+            {
+                "source_key": "qul-ms-292",
+                "resource_id": "292",
+                "verse_key": "1:3",
+                "status": "candidate",
+            },
+        ]
+        client = RecordingReviewClient()
+
+        report = review_findings(findings, "qul-ms-292", client, limit=1)
+
+        self.assertTrue(report["advisory_only"])
+        self.assertEqual(report["selected_count"], 1)
+        self.assertEqual(client.calls, ["1:1"])
+        self.assertEqual(report["results"][0]["source_key"], "qul-ms-292")
+        self.assertEqual(report["results"][0]["resource_id"], "292")
+        self.assertEqual(report["results"][0]["verse_key"], "1:1")
+        self.assertEqual(report["results"][0]["status"], "candidate")
+
+    def test_jev_review_rejects_source_mismatch_before_request(self):
+        findings = [{"source_key": "qurancom-ms-39", "status": "candidate", "verse_key": "1:1"}]
+        client = RecordingReviewClient()
+
+        with self.assertRaises(SourceMismatchError):
+            review_findings(findings, "qul-ms-292", client)
+
+        self.assertEqual(client.calls, [])
+
+    def test_jev_review_captures_one_error_and_continues(self):
+        findings = [
+            {"source_key": "qul-ms-292", "resource_id": "292", "verse_key": "1:1", "status": "candidate"},
+            {"source_key": "qul-ms-292", "resource_id": "292", "verse_key": "1:2", "status": "candidate"},
+        ]
+        client = RecordingReviewClient(error_on="1:1")
+
+        report = review_findings(findings, "qul-ms-292", client)
+
+        self.assertEqual(client.calls, ["1:1", "1:2"])
+        self.assertIn("error", report["results"][0])
+        self.assertEqual(report["results"][1]["answers"]["finding_kind"]["choice"], "spelling_or_typo")
+
+    def test_jev_api_key_prefers_environment_and_reads_env_file(self):
+        with tempfile.TemporaryDirectory() as directory:
+            env_path = Path(directory) / ".env"
+            env_path.write_text('TYPESAFE_API_KEY="from-file"\n', encoding="utf-8")
+
+            self.assertEqual(
+                load_api_key({"TYPESAFE_API_KEY": "from-environment"}, env_path),
+                "from-environment",
+            )
+            self.assertEqual(load_api_key({}, env_path), "from-file")
+
+    def test_jev_api_key_missing_is_rejected(self):
+        with self.assertRaises(JevClientError):
+            load_api_key({}, None)
+
     def test_registry_keeps_qurancom_and_qul_tracks_separate(self):
         registry = json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
         sources = {source["source_key"]: source for source in registry["sources"]}

@@ -16,6 +16,7 @@ from .corrections import (
     filter_corrections,
     load_correction_manifest,
 )
+from .jev import JevClient, JevClientError, load_api_key, review_findings
 
 __all__ = [
     "EXPECTED_VERSE_COUNT",
@@ -28,6 +29,10 @@ __all__ = [
     "filter_corrections",
     "load_correction_manifest",
     "load_export_rows",
+    "JevClient",
+    "JevClientError",
+    "load_api_key",
     "normalize_for_analysis",
+    "review_findings",
     "validate_export",
 ]
