@@ -22,7 +22,7 @@
   "provenance": {
     "retrieved_at": "2026-09-15",
     "source_record": "sources/qul/resources/292-basamia/source.json",
-    "review_note": "Each record requires QUL-specific review before status can become confirmed. This patch was derived from the 197-record Quran.com manifest snapshot with SHA-256 5673074888c64d4caf42502fd8604f0f3c57f94de5c5973f4580993347d26e29; the 16 capitalization findings added later have not been compared against the unavailable QUL source export."
+    "review_note": "Each record requires QUL-specific review before status can become confirmed. This patch was derived from the 197-record Quran.com manifest snapshot with SHA-256 5673074888c64d4caf42502fd8604f0f3c57f94de5c5973f4580993347d26e29; the 16 capitalization findings, including the 11:13 quote-spacing adjustment reviewed on 2026-09-26, have not been compared against the unavailable QUL source export."
   },
   "corrections": [
     {

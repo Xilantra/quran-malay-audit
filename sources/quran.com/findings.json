@@ -2441,8 +2441,8 @@
       "status": "confirmed",
       "verse_key": "11:13",
       "observed": "! \" katakanlah",
-      "proposed": "! \" Katakanlah",
-      "evidence": "Sentence-start capitalization after the source exclamation boundary; exact fragment checked in the Basmeih Malay row from the goSolat Quran.com resource 39 snapshot. Snapshot SHA-256: d1b6d254efb02aed6c816e94a1e90831d764b1ca2f3c8c6ace8904e7ed782ac0.",
+      "proposed": "! \"Katakanlah",
+      "evidence": "Sentence-start capitalization after the source exclamation boundary, with the extra space after the opening quotation mark removed; exact fragment checked in the Basmeih Malay row from the goSolat Quran.com resource 39 snapshot. Snapshot SHA-256: d1b6d254efb02aed6c816e94a1e90831d764b1ca2f3c8c6ace8904e7ed782ac0.",
       "reviewer": "user (explicit request in this task)",
       "upstream_ticket": null,
       "source_url": "https://api.quran.com/api/v4/quran/translations/39",
@@ -2646,7 +2646,7 @@
   "provenance": {
     "source_record": "sources/quran.com/source.json",
     "correction_manifest": "sources/quran.com/corrections.json",
-    "reviewed_at": "2026-09-25",
+    "reviewed_at": "2026-09-26",
     "source_snapshot": {
       "repository": "goSolat",
       "path": "goSolat/Resources/quran.sqlite",

@@ -1207,7 +1207,7 @@
     {
       "verse_key": "11:13",
       "find": "! \" katakanlah",
-      "replace": "! \" Katakanlah",
+      "replace": "! \"Katakanlah",
       "status": "confirmed"
     },
     {
@@ -1288,7 +1288,7 @@
   "translator": "Abdullah Muhammad Basmeih",
   "provenance": {
     "basis": "confirmed textual correction catalog for the named Quran.com resource",
-    "reviewed_at": "2026-09-25",
+    "reviewed_at": "2026-09-26",
     "source_record": "sources/quran.com/source.json",
     "notes": "Meaning changes and legacy-style normalization are excluded.",
     "source_retrieval_date": "2026-09-15",

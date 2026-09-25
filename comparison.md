@@ -1,6 +1,6 @@
 # Quran Malay translation comparison
 
-Generated: 2026-09-25
+Generated: 2026-09-26
 
 This is a human-readable comparison generated from the source-specific correction manifests. The canonical data remains in the JSON files under `sources/`. No original translation export is included here.
 
@@ -231,7 +231,7 @@ The read-only goSolat `quran.sqlite` snapshot contains 6,236 Malay rows for Qura
 | `3:158` | `! jika` | `! Jika` | Not assessed |
 | `10:22` | `! jika` | `! Jika` | Not assessed |
 | `11:10` | `! kalau` | `! Kalau` | Not assessed |
-| `11:13` | `! " katakanlah` | `! " Katakanlah` | Not assessed |
+| `11:13` | `! " katakanlah` | `! "Katakanlah` | Not assessed |
 | `11:91` | `! kami` | `! Kami` | Not assessed |
 | `11:95` | `! kebinasaanlah` | `! Kebinasaanlah` | Not assessed |
 | `12:46` | `! tafsirkanlah` | `! Tafsirkanlah` | Not assessed |
@@ -245,7 +245,7 @@ The read-only goSolat `quran.sqlite` snapshot contains 6,236 Malay rows for Qura
 | `67:18` | `! orang-orang` | `! Orang-orang` | Not assessed |
 | `75:34` | `!) sudahlah` | `!) Sudahlah` | Not assessed |
 
-The QUL column is unassessed because the validated resource 292 export is not present locally. No corresponding records appear in the tracked candidate patch, which was derived from the earlier 197-record Quran.com catalog. In `11:91`, this correction changes only `kami` to `Kami`; it leaves the source's preceding comma untouched.
+The QUL column is unassessed because the validated resource 292 export is not present locally. No corresponding records appear in the tracked candidate patch, which was derived from the earlier 197-record Quran.com catalog. In `11:13`, the proposal capitalizes `Katakanlah` and removes the extra source space after the opening quotation mark. In `11:91`, this correction changes only `kami` to `Kami`; it leaves the source's preceding comma untouched.
 
 The seven unchanged cases are `3:59` and `16:40` (lowercase `maka` continues a quoted command), `56:26` (the parenthetical phrase describes the quoted greeting), `69:41` and `69:42` (the main clause resumes after a parenthetical aside), `83:15` (a parenthetical condition joins the following clause), and `102:7` (the sentence resumes after a dash-delimited aside).
 
