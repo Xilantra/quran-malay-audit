@@ -1185,6 +1185,102 @@
       "find": "anggota anggota tubuh",
       "replace": "anggota-anggota tubuh",
       "status": "confirmed"
+    },
+    {
+      "verse_key": "3:158",
+      "find": "! jika",
+      "replace": "! Jika",
+      "status": "confirmed"
+    },
+    {
+      "verse_key": "10:22",
+      "find": "! jika",
+      "replace": "! Jika",
+      "status": "confirmed"
+    },
+    {
+      "verse_key": "11:10",
+      "find": "! kalau",
+      "replace": "! Kalau",
+      "status": "confirmed"
+    },
+    {
+      "verse_key": "11:13",
+      "find": "! \" katakanlah",
+      "replace": "! \" Katakanlah",
+      "status": "confirmed"
+    },
+    {
+      "verse_key": "11:91",
+      "find": "! kami",
+      "replace": "! Kami",
+      "status": "confirmed"
+    },
+    {
+      "verse_key": "11:95",
+      "find": "! kebinasaanlah",
+      "replace": "! Kebinasaanlah",
+      "status": "confirmed"
+    },
+    {
+      "verse_key": "12:46",
+      "find": "! tafsirkanlah",
+      "replace": "! Tafsirkanlah",
+      "status": "confirmed"
+    },
+    {
+      "verse_key": "14:14",
+      "find": "! kami",
+      "replace": "! Kami",
+      "status": "confirmed"
+    },
+    {
+      "verse_key": "14:35",
+      "find": "! jadikanlah",
+      "replace": "! Jadikanlah",
+      "status": "confirmed"
+    },
+    {
+      "verse_key": "37:114",
+      "find": "! kami",
+      "replace": "! Kami",
+      "status": "confirmed"
+    },
+    {
+      "verse_key": "39:65",
+      "find": "! jika",
+      "replace": "! Jika",
+      "status": "confirmed"
+    },
+    {
+      "verse_key": "67:18",
+      "find": "! orang-orang",
+      "replace": "! Orang-orang",
+      "status": "confirmed"
+    },
+    {
+      "verse_key": "18:39",
+      "find": "! (tiada",
+      "replace": "! (Tiada",
+      "status": "confirmed"
+    },
+    {
+      "verse_key": "27:60",
+      "find": "!) bahkan",
+      "replace": "!) Bahkan",
+      "status": "confirmed"
+    },
+    {
+      "verse_key": "27:61",
+      "find": "!) bahkan",
+      "replace": "!) Bahkan",
+      "status": "confirmed"
+    },
+    {
+      "verse_key": "75:34",
+      "find": "!) sudahlah",
+      "replace": "!) Sudahlah",
+      "status": "confirmed"
     }
   ],
   "source_key": "qurancom-ms-39",
@@ -1192,9 +1288,21 @@
   "translator": "Abdullah Muhammad Basmeih",
   "provenance": {
     "basis": "confirmed textual correction catalog for the named Quran.com resource",
-    "reviewed_at": "2026-09-15",
+    "reviewed_at": "2026-09-25",
     "source_record": "sources/quran.com/source.json",
-    "notes": "Meaning changes and legacy-style normalization are excluded."
+    "notes": "Meaning changes and legacy-style normalization are excluded.",
+    "source_retrieval_date": "2026-09-15",
+    "source_version": "Quran.com Content API v4, resource 39; verified against the named goSolat SQLite snapshot",
+    "source_snapshot": {
+      "repository": "goSolat",
+      "path": "goSolat/Resources/quran.sqlite",
+      "generated_at": "2026-08-02T09:15:37.345678+00:00",
+      "schema_version": "3",
+      "sha256": "d1b6d254efb02aed6c816e94a1e90831d764b1ca2f3c8c6ace8904e7ed782ac0",
+      "source_name": "Quran.com Content API v4",
+      "translation_ms_resource_id": "39",
+      "translation_ms_corrections_applied": "197",
+      "translation_ms_corrections_sha256": "4812d3246c8276a70e1929415167f96865458b7e912e4ea0b5fdc833ad516792"
+    }
   }
 }
-

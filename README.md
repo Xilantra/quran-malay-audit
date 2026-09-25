@@ -35,7 +35,7 @@ Current source status:
 
 | Source track | Resource | State |
 | --- | --- | --- |
-| Quran.com | Resource 39, Abdullah Muhammad Basmeih | 197 confirmed textual corrections |
+| Quran.com | Resource 39, Abdullah Muhammad Basmeih | 213 confirmed textual corrections |
 | QUL | Resource 292, Abdullah Basamia | JSON export validated; 180 candidate patch records |
 | QUL | Resource 130 | Excluded metadata and language anomaly |
 

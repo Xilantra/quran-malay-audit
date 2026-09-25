@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+- Added 16 reviewed sentence-start capitalization corrections after exclamation marks to the Quran.com resource 39 audit.
 - Future source-specific findings and reviewed patch updates.
 
 ## [0.1.0] - 2026-09-15

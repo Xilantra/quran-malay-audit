@@ -1,6 +1,6 @@
 # Quran Malay translation comparison
 
-Generated: 2026-09-15
+Generated: 2026-09-25
 
 This is a human-readable comparison generated from the source-specific correction manifests. The canonical data remains in the JSON files under `sources/`. No original translation export is included here.
 
@@ -8,11 +8,13 @@ This is a human-readable comparison generated from the source-specific correctio
 
 | Track | Resource | Records | Meaning |
 | --- | --- | ---: | --- |
-| Quran.com | Resource 39, Abdullah Muhammad Basmeih | 197 | Confirmed source-scoped textual corrections |
-| QUL | Resource 292, Abdullah Basamia | 180 | Candidate exact phrase matches pending QUL-specific review |
+| Quran.com | Resource 39, Abdullah Muhammad Basmeih | 213 | Confirmed source-scoped textual corrections |
+| QUL | Resource 292, Abdullah Basamia | 180 | Candidate exact phrase matches in the tracked patch, derived from the earlier 197-record Quran.com catalog |
 | QUL | Resource 130 | 0 | Excluded metadata and language anomaly |
 
 The QUL 292 base export was validated with 6,236 verse keys. Its SHA-256 is `e01351d5826a6d97eac05fd76abb9eecc66a331cf86c2c9fadfc667e06e38e9d`. The original export remains outside this repository.
+
+The current QUL 292 export is not available in this workspace. The 16 exclamation-mark capitalization cases below have not been checked against QUL source text; their absence from the older tracked candidate patch is not evidence of a QUL error or match.
 
 ## How to read the table
 
@@ -220,11 +222,38 @@ The QUL 292 base export was validated with 6,236 verse keys. Its SHA-256 is `e01
 | `59:4` | `kerana mereka menentang` | `kerana mereka mereka menentang` | `kerana mereka mereka menentang` | `confirmed` | `candidate` | Exact phrase match in the validated QUL 292 export; QUL-specific review is required. |
 | `70:16` | `anggota-anggota tubuh` | `anggota anggota tubuh` | `anggota anggota tubuh` | `confirmed` | `candidate` | Exact phrase match in the validated QUL 292 export; QUL-specific review is required. |
 
+## Sentence-start capitalization after exclamation marks
+
+The read-only goSolat `quran.sqlite` snapshot contains 6,236 Malay rows for Quran.com resource 39. A scan found 23 lowercase tokens after `!`; 16 were reviewed as sentence starts and added to the Quran.com correction catalog. Seven remain unchanged because the lowercase token continues a quoted, parenthetical, or dash-interrupted sentence. The database is recorded as provenance and is not included in this repository.
+
+| Verse | Quran.com observed | Proposed | QUL 292 text comparison |
+| --- | --- | --- | --- |
+| `3:158` | `! jika` | `! Jika` | Not assessed |
+| `10:22` | `! jika` | `! Jika` | Not assessed |
+| `11:10` | `! kalau` | `! Kalau` | Not assessed |
+| `11:13` | `! " katakanlah` | `! " Katakanlah` | Not assessed |
+| `11:91` | `! kami` | `! Kami` | Not assessed |
+| `11:95` | `! kebinasaanlah` | `! Kebinasaanlah` | Not assessed |
+| `12:46` | `! tafsirkanlah` | `! Tafsirkanlah` | Not assessed |
+| `14:14` | `! kami` | `! Kami` | Not assessed |
+| `14:35` | `! jadikanlah` | `! Jadikanlah` | Not assessed |
+| `18:39` | `! (tiada` | `! (Tiada` | Not assessed |
+| `27:60` | `!) bahkan` | `!) Bahkan` | Not assessed |
+| `27:61` | `!) bahkan` | `!) Bahkan` | Not assessed |
+| `37:114` | `! kami` | `! Kami` | Not assessed |
+| `39:65` | `! jika` | `! Jika` | Not assessed |
+| `67:18` | `! orang-orang` | `! Orang-orang` | Not assessed |
+| `75:34` | `!) sudahlah` | `!) Sudahlah` | Not assessed |
+
+The QUL column is unassessed because the validated resource 292 export is not present locally. No corresponding records appear in the tracked candidate patch, which was derived from the earlier 197-record Quran.com catalog. In `11:91`, this correction changes only `kami` to `Kami`; it leaves the source's preceding comma untouched.
+
+The seven unchanged cases are `3:59` and `16:40` (lowercase `maka` continues a quoted command), `56:26` (the parenthetical phrase describes the quoted greeting), `69:41` and `69:42` (the main clause resumes after a parenthetical aside), `83:15` (a parenthetical condition joins the following clause), and `102:7` (the sentence resumes after a dash-delimited aside).
+
 ## Summary
 
-- Quran.com confirmed records: **197**
-- Exact QUL 292 candidate matches: **180**
-- Quran.com records without a QUL 292 candidate: **17**
+- Quran.com confirmed records: **213**
+- Tracked QUL 292 candidate records: **180**, derived from the earlier 197-record Quran.com catalog.
+- The earlier catalog had 17 Quran.com records without a matching QUL candidate. The 16 new capitalization findings have not been compared against QUL source text.
 - QUL 292 records are not auto-approved by the correction gate.
 
 ## Canonical files
