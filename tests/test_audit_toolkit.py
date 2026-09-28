@@ -230,7 +230,7 @@ class AuditToolkitTests(unittest.TestCase):
         self.assertEqual(resources["qul-ms-292"]["text_audit_status"], "key_set_validated_candidate_review_pending")
         self.assertEqual(resources["qul-130-metadata-anomaly"]["download_status"], "excluded")
 
-    def test_imported_qurancom_findings_are_197_confirmed_records(self):
+    def test_imported_qurancom_findings_are_213_confirmed_records(self):
         ledger = json.loads(FINDINGS_PATH.read_text(encoding="utf-8"))
         findings = ledger["findings"]
         imported = [
@@ -240,7 +240,7 @@ class AuditToolkitTests(unittest.TestCase):
             and finding["status"] == "confirmed"
         ]
 
-        self.assertEqual(len(imported), 197)
+        self.assertEqual(len(imported), 213)
         required = {
             "source_key",
             "resource_id",
@@ -360,7 +360,7 @@ class AuditToolkitTests(unittest.TestCase):
         manifest = load_correction_manifest(CORRECTIONS_PATH)
         approved = filter_corrections(manifest, source_key="qurancom-ms-39")
 
-        self.assertEqual(len(approved), 197)
+        self.assertEqual(len(approved), 213)
         self.assertTrue(all(item["status"] == "confirmed" for item in approved))
         with self.assertRaises(SourceMismatchError):
             filter_corrections(manifest, source_key="qul-ms-292")
